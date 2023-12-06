@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PetPick</string>
+    <string name="home">홈</string>
+    <string name="image_search">이미지 품종 검색</string>
+    <string name="recommand">품종추천</string>
+    <string name="mypage">마이페이지</string>
+    <string name="petpick">PETPICK</string>
+    <string name="petpick_next">은 개, 고양이 품종</string>
+    <string name="petpick_bottom">이미지 검색이 가능해요</string>
+    <string name="image_search_context">당신의 반려동물 혹은 당신이 키우고 싶은 동물의 품종을 알아내고 해당 품조의 유전병, 지능순위, 대체로 좋아하는 놀이, 기원에 대해서 읽어보세요.</string>
+    <string name="next_recommand">을 받을 수 있어요.</string>
+    <string name="top_recommand">체크리스트를 통한 검사로</string>
+    <string name="recommand_context">회원 가입 당시 입력한 정보도 자동으로 반영됩니다. 가입 당시와 현재 정보가 다르자면 마이페이지로 가서 회원 정보를 변경할 수 있습니다.</string>
+    <string name="go_to_home">홈으로</string>
+    <string name="warning_title">주의사항</string>
+    <string name="warning_context">한 마리의 동물이 찍힌 사진을\n불러와야 보다 정확한 정보가 나옵니다.</string>
+    <string name="breed_analysis">분종 분석하기</string>
+    <string name="very_yes">매우그렇다</string>
+    <string name="yes">그렇다</string>
+    <string name="normal">보통이다</string>
+    <string name="no">그렇지 않다</string>
+    <string name="very_no">매우 그렇지 않다</string>
+    <string name="previous_btn">이전 질문으로</string>
+    <string name="next_btn">다음 질문으로</string>
+</resources>

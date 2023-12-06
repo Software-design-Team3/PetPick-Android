@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".view.activity.BreedRecommendationActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/home"
+        android:layout_width="61dp"
+        android:layout_height="24dp"
+        android:layout_margin="8dp"
+        android:text="@string/go_to_home"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:background="@drawable/black_round_rectangle"
+        android:fontFamily="@font/bm_hanna_11yrs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bm_hanna_11yrs"
+        android:gravity="center"
+        android:text="질문N\n\n두 줄 예시 문장"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/check_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/check_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+        <RadioButton
+            android:id="@+id/very_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/very_yes"
+            android:button="@null"
+            android:drawableTop="@drawable/check_list_radio_btn"
+            android:stateListAnimator="@null"
+            android:textSize="13sp"
+            android:textColor="@color/radio_text"
+            android:fontFamily="@font/jost_regular"
+            android:gravity="bottom"
+            android:layout_marginHorizontal="8dp"/>
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textSize="13sp"
+            android:button="@null"
+            android:drawableTop="@drawable/check_list_radio_btn"
+            android:stateListAnimator="@null"
+            android:textColor="@color/radio_text"
+            android:fontFamily="@font/jost_regular"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginHorizontal="8dp"/>
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/normal"
+            android:button="@null"
+            android:drawableTop="@drawable/check_list_radio_btn"
+            android:stateListAnimator="@null"
+            android:textSize="13sp"
+            android:textColor="@color/radio_text"
+            android:fontFamily="@font/jost_regular"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginHorizontal="8dp"/>
+
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:button="@null"
+            android:drawableTop="@drawable/check_list_radio_btn"
+            android:stateListAnimator="@null"
+            android:textSize="13sp"
+            android:textColor="@color/radio_text"
+            android:fontFamily="@font/jost_regular"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginHorizontal="8dp"/>
+
+        <RadioButton
+            android:id="@+id/very_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/very_no"
+            android:textSize="13sp"
+            android:button="@null"
+            android:drawableTop="@drawable/check_list_radio_btn"
+            android:stateListAnimator="@null"
+            android:textColor="@color/radio_text"
+            android:fontFamily="@font/jost_regular"
+            android:gravity="center_horizontal|bottom"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/recommand_result"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:visibility="gone"
+        android:layout_marginBottom="55dp"
+        android:layout_marginHorizontal="40dp"
+        android:src="@drawable/recommand_result_btn"
+        app:layout_constraintBottom_toTopOf="@+id/page_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost_bold"
+        android:text="@string/previous_btn"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:drawableLeft="@drawable/previous_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/next_btn"
+        android:fontFamily="@font/jost_bold"
+        android:gravity="center"
+        android:text="@string/next_btn"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/page_num"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="x / nn"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:fontFamily="@font/jost_regular"
+        android:gravity="center"
+        android:background="@drawable/translucent_round_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
