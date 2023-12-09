@@ -37,7 +37,6 @@ class BreedRecommendationActivity : AppCompatActivity() {
             if(check == null){
                 binding.recommandResult.visibility = View.VISIBLE
             }
-
         }
 
         binding.recommandResult.setOnClickListener {

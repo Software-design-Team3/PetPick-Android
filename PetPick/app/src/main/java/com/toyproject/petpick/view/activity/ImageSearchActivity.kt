@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import com.bumptech.glide.Glide
+import com.toyproject.petpick.R
 import com.toyproject.petpick.data.Image
 import com.toyproject.petpick.databinding.ActivityImageSearchBinding
 
@@ -50,7 +51,9 @@ class ImageSearchActivity : AppCompatActivity() {
 
         binding.breedAnalysis.setOnClickListener {
             if(imageCheck){
-                startActivity(Intent(this, BreedInformationActivity::class.java))
+                val intent = Intent(this, BreedInformationActivity::class.java)
+                intent.putExtra(resources.getString(R.string.info_type), 1)
+                startActivity(intent)
             }else{
                 Toast.makeText(this, "이미지를 불러와주세요.", Toast.LENGTH_SHORT).show()
             }

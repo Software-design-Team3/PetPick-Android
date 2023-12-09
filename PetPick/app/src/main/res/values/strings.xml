@@ -22,4 +22,14 @@
     <string name="very_no">매우 그렇지 않다</string>
     <string name="previous_btn">이전 질문으로</string>
     <string name="next_btn">다음 질문으로</string>
+    <string name="week">안 맞아요</string>
+    <string name="hereditary">유전병</string>
+    <string name="personality">성격</string>
+    <string name="life">기대수명</string>
+    <string name="intellect">지능순위</string>
+    <string name="fur_type">털 종류</string>
+    <string name="fur_loss">털 빠짐</string>
+    <string name="play">선호놀이</string>
+    <string name="info_type">Type</string>
+    <string name="week_title">안 맞아요</string>
 </resources>

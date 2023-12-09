@@ -75,6 +75,8 @@
                 android:id="@+id/info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
                 tools:listitem="@layout/breed_info_item"
                 android:overScrollMode="never"
                 android:nestedScrollingEnabled="false"
