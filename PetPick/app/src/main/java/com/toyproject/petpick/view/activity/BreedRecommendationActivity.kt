@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import com.toyproject.petpick.R
@@ -32,6 +33,10 @@ class BreedRecommendationActivity : AppCompatActivity() {
 
         binding.checkButtons.setOnCheckedChangeListener { group, checkedId ->
             Log.d("RadioBtn", checkedId.toString())
+            var check = answers.find { it == -1 }
+            if(check == null){
+                binding.recommandResult.visibility = View.VISIBLE
+            }
 
         }
 
